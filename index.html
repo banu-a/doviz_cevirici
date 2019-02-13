@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"> 
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:700">
+		<link rel="stylesheet" href="C://xampp/htdocs/indexhtml/doviz_cevirici/style1.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="C://xampp/htdocs/indexhtml/doviz_cevirici/scrpt.js"></script>
+    </head>
+    
+    <body onload="">
+        <div class="form">
+            <div class="form1">
+        <div title="Serbest Piyasa - Güncelleme: 8/2/2019 19:26:02" class="doviz_cevirici">
+            <ul>
+                <li class="miktar"><b>Miktar</b></li>
+                <li class="giris">
+                    <input name="para" id="para" onkeyup="doviz()" type="text" autocomplete="off"></li>
+                <li class="birim">
+                <select id="birim" onkeyup="doviz()" onchange="doviz()">
+                    <option selected="selected" value="TL">Türk Lirası</option>
+                    <option value="USD">ABD Doları</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">İngiliz Sterlini</option>
+                    <option value="JPY">Japon Yeni</option>
+                    <option value="CHF">İsviçre Frangı</option>
+                    <option value="DKK">Danimarka Kronu</option>
+                    <option value="SEK">İsveç Kronu</option>
+                    <option value="NOK">Norveç Kronu</option>
+                    <option value="SAR">Suudi Arabistan Riyali</option>
+                    <option value="AUD">Avustralya Doları</option>
+                    <option value="CAD">Kanada Doları</option>
+                    <option value="RUB">Rus Rublesi</option>
+                    <option value="CNY">Çin Yuanı Renminbi</option>
+                    <option value="ZAR">Güney Afrika Randı</option>
+                    <option value="MXN">Meksika Pezosu</option>
+                    <option value="NZD">Yeni Zelanda Doları</option>
+                    <option value="IQD">Irak Dinarı</option>
+                    <option value="AED">Birleşik Arap Emirlikleri Dirhemi</option>
+                    <option value="KWD">Kuveyt Dinarı</option>
+                    <option value="BHD">Bahreyn Dinarı</option>
+                </select>
+                </li>
+                <li class="cevir" id="birimleri_ters_cevir">
+                    <input name="ters_cevir" id="ters_cevir" onclick="tersdoviz()" type="button" value="Birimleri Ters Çevir">
+                </li>
+                <li class="birim2">
+                <select id="birim2" onkeyup="doviz()" onchange="doviz()">
+                    <option value="TL">Türk Lirası</option>
+                    <option selected="selected" value="USD">ABD Doları</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">İngiliz Sterlini</option>
+                    <option value="JPY">Japon Yeni</option>
+                    <option value="CHF">İsviçre Frangı</option>
+                    <option value="DKK">Danimarka Kronu</option>
+                    <option value="SEK">İsveç Kronu</option>
+                    <option value="NOK">Norveç Kronu</option>
+                    <option value="SAR">Suudi Arabistan Riyali</option>
+                    <option value="AUD">Avustralya Doları</option>
+                    <option value="CAD">Kanada Doları</option>
+                    <option value="RUB">Rus Rublesi</option>
+                    <option value="CNY">Çin Yuanı Renminbi</option>
+                    <option value="ZAR">Güney Afrika Randı</option>
+                    <option value="MXN">Meksika Pezosu</option>
+                    <option value="NZD">Yeni Zelanda Doları</option>
+                    <option value="IQD">Irak Dinarı</option>
+                    <option value="AED">Birleşik Arap Emirlikleri Dirhemi</option>
+                    <option value="KWD">Kuveyt Dinarı</option>
+                    <option value="BHD">Bahreyn Dinarı</option>
+                </select>
+                </li>
+                <li class="alisatis">
+                    Satış<input name="satisalis" onclick="doviz()" type="radio" checked="checked">
+                    Alış<input name="satisalis" onclick="doviz()" type="radio">
+                </li>
+                <li class="sonuc"><b>Sonuç</b></li>
+                    <input name="para2" id="para2" onfocus="blur()" type="text">
+                
+                    <li>Veriler <a href="http://www.piyasadoviz.com" target="_blank">piyasadoviz.com</a> sitesinden alınmıştır</li>    
+
+
+                    <!--
+                <li class="ne">
+                    <a title="Serbest Piyasa: Döviz Çevirici" id="plink" href="http://www.piyasadoviz.com" target="_blank"><img alt="Serbest Piyasa: Döviz Çevirici" src="http://eklenti.piyasadoviz.com/grafik/mini.logo.gif"></a>
+                </li>
+            -->
+            </ul>
+        </div>
+        </div>
+    </div>
+
+   
+    <script type="text/javascript">doviz();</script>
+
+    <div id="koddostu_com_doviz_kur"></div>
+   <!--
+        <script src="https://www.koddostu.com/kdjs/doviz.php?birimler=USD,EUR&amp;tema=3" async="true"></script>
+   -->
+        <script src="https://www.koddostu.com/duzelt.js?no=353"></script>
+    </body>
+    
+</html>
